@@ -8,3 +8,5 @@ This is a project for my tutorials
 * TableView binding with MVVM and RxSwift
 
 * AutoLayout
+
+* Safe Areas
