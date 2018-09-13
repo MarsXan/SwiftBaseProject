@@ -6,3 +6,5 @@ This is a project for my tutorials
 * Simple twoWay binding with MVVM and RxSwift
 
 * TableView binding with MVVM and RxSwift
+
+* AutoLayout
