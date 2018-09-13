@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5619F24E214A4C0800338B74 /* AutoLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619F24D214A4C0800338B74 /* AutoLayoutController.swift */; };
+		5619F251214AC1B800338B74 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619F250214AC1B800338B74 /* Colors.swift */; };
 		566559592147E78E00F34E09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566559582147E78E00F34E09 /* TableViewController.swift */; };
 		5665595B2147F17A00F34E09 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5665595A2147F17A00F34E09 /* TableViewModel.swift */; };
 		5665595D2147F8B800F34E09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5665595C2147F8B800F34E09 /* TableViewCell.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		4582DF19B8BB9F9D605AFA78 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		5619F24D214A4C0800338B74 /* AutoLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutController.swift; sourceTree = "<group>"; };
+		5619F250214AC1B800338B74 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		566559582147E78E00F34E09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5665595A2147F17A00F34E09 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		5665595C2147F8B800F34E09 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 				5619F24D214A4C0800338B74 /* AutoLayoutController.swift */,
 			);
 			path = autoLayout;
+			sourceTree = "<group>";
+		};
+		5619F24F214AC15F00338B74 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				5619F250214AC1B800338B74 /* Colors.swift */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 		566559572147DE6A00F34E09 /* xib */ = {
@@ -117,6 +127,7 @@
 		56B8B42021429F9F0075F765 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				5619F24F214AC15F00338B74 /* utility */,
 				5619F24C214A4BE500338B74 /* autoLayout */,
 				56DFCC3321470A700017EF01 /* twoWayBinding */,
 				56B8B42121429F9F0075F765 /* AppDelegate.swift */,
@@ -264,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5665595D2147F8B800F34E09 /* TableViewCell.swift in Sources */,
+				5619F251214AC1B800338B74 /* Colors.swift in Sources */,
 				56B8B42421429F9F0075F765 /* SimpleController.swift in Sources */,
 				5619F24E214A4C0800338B74 /* AutoLayoutController.swift in Sources */,
 				56655961214820A000F34E09 /* TableViewViewModel.swift in Sources */,
