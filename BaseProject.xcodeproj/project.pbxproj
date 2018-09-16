@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5619F24E214A4C0800338B74 /* AutoLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619F24D214A4C0800338B74 /* AutoLayoutController.swift */; };
 		5619F251214AC1B800338B74 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5619F250214AC1B800338B74 /* Colors.swift */; };
+		5625B504214E43AA005ED6E6 /* SwipingPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625B503214E43AA005ED6E6 /* SwipingPageCell.swift */; };
+		562AAFB2214E36E900D1B26E /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562AAFB1214E36E900D1B26E /* SwipingController.swift */; };
 		566559592147E78E00F34E09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566559582147E78E00F34E09 /* TableViewController.swift */; };
 		5665595B2147F17A00F34E09 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5665595A2147F17A00F34E09 /* TableViewModel.swift */; };
 		5665595D2147F8B800F34E09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5665595C2147F8B800F34E09 /* TableViewCell.swift */; };
@@ -20,6 +22,8 @@
 		56B8B42921429FA30075F765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B8B42821429FA30075F765 /* Assets.xcassets */; };
 		56B8B42C21429FA30075F765 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B8B42A21429FA30075F765 /* LaunchScreen.storyboard */; };
 		56DFCC36214716460017EF01 /* SimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DFCC35214716460017EF01 /* SimpleViewModel.swift */; };
+		96C1928F2FBDFE77FC9769FF /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C194C9B8AF318CCE56F711 /* Page.swift */; };
+		96C1942ACBF03FD5934E397E /* SwipingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C1919A1151565016D6F3DA /* SwipingVM.swift */; };
 		BF50F51D1C1B161413E23E19 /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9323B9D6D186A8A0EFE0D561 /* Pods_BaseProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,8 @@
 		4582DF19B8BB9F9D605AFA78 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 		5619F24D214A4C0800338B74 /* AutoLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutController.swift; sourceTree = "<group>"; };
 		5619F250214AC1B800338B74 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5625B503214E43AA005ED6E6 /* SwipingPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingPageCell.swift; sourceTree = "<group>"; };
+		562AAFB1214E36E900D1B26E /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		566559582147E78E00F34E09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5665595A2147F17A00F34E09 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		5665595C2147F8B800F34E09 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -41,6 +47,8 @@
 		56B8B42D21429FA30075F765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56DFCC35214716460017EF01 /* SimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewModel.swift; sourceTree = "<group>"; };
 		9323B9D6D186A8A0EFE0D561 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C1919A1151565016D6F3DA /* SwipingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipingVM.swift; sourceTree = "<group>"; };
+		96C194C9B8AF318CCE56F711 /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AFD771B119FDD2A3AB4550FB /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				5619F24D214A4C0800338B74 /* AutoLayoutController.swift */,
+				562AAFB1214E36E900D1B26E /* SwipingController.swift */,
+				5625B503214E43AA005ED6E6 /* SwipingPageCell.swift */,
+				96C194C9B8AF318CCE56F711 /* Page.swift */,
+				96C1919A1151565016D6F3DA /* SwipingVM.swift */,
 			);
 			path = autoLayout;
 			sourceTree = "<group>";
@@ -280,10 +292,14 @@
 				5619F24E214A4C0800338B74 /* AutoLayoutController.swift in Sources */,
 				56655961214820A000F34E09 /* TableViewViewModel.swift in Sources */,
 				56B8B42221429F9F0075F765 /* AppDelegate.swift in Sources */,
+				562AAFB2214E36E900D1B26E /* SwipingController.swift in Sources */,
 				5665595B2147F17A00F34E09 /* TableViewModel.swift in Sources */,
 				568B9EFD2147C9CA00DD52E2 /* PersonModel.swift in Sources */,
 				56DFCC36214716460017EF01 /* SimpleViewModel.swift in Sources */,
+				5625B504214E43AA005ED6E6 /* SwipingPageCell.swift in Sources */,
 				566559592147E78E00F34E09 /* TableViewController.swift in Sources */,
+				96C1928F2FBDFE77FC9769FF /* Page.swift in Sources */,
+				96C1942ACBF03FD5934E397E /* SwipingVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

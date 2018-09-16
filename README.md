@@ -10,3 +10,7 @@ This is a project for my tutorials
 * AutoLayout
 
 * Safe Areas
+
+* Swiping/Paging
+
+* CollectionView binding with MVVM and RxSwift
