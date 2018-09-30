@@ -67,6 +67,27 @@ class SwipingController: UIViewController ,UICollectionViewDelegate{
 
     }
 
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let x = targetContentOffset.pointee.x
+        print(x,view.frame.width)
+        pageController.currentPage = Int(x / view.frame.width)
+        targetContentOffset.pointee = scrollView.contentOffset
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { _ in
+            self.collectionView?.frame = self.view.frame
+            self.collectionView?.collectionViewLayout.invalidateLayout()
+            let indexPath = IndexPath(item: self.pageController.currentPage, section: 0)
+            self.collectionView?.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+
+         }, completion:
+        {_ in })
+
+    }
+
+
     @objc private func handleNext() {
         let nextIndex = min(pageController.currentPage+1, pageCount-1)
         let indexPath = IndexPath(item:nextIndex,section: 0)
@@ -94,12 +115,6 @@ class SwipingController: UIViewController ,UICollectionViewDelegate{
                 }.disposed(by: bag);
 
         self.collectionView?.rx.setDelegate(self).disposed(by: bag)
-    }
-
-    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let x = targetContentOffset.pointee.x
-        print(x,view.frame.width)
-        pageController.currentPage = Int(x / view.frame.width)
     }
 
     private func setupButtonControls() {

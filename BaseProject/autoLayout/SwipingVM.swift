@@ -12,7 +12,6 @@ class SwipingVM {
                                   , Page(id: 2,imageName: "leaf_third", title: "Leaf", body: "a leaf is an organ of a vascular plant and is the principal lateral appendage of the stem.")])
 
 
-
     func getPages() -> Observable<[Page]> {
         return pages.asObservable()
     }
